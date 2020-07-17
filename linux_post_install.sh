@@ -3,6 +3,7 @@ set -e
 
 YUM_PACKAGE_NAME="epel-release xe-guest-utilities-latest htop sssd realmd oddjob oddjob-mkhomedir adcli samba-common samba-common-tools krb5-workstation openldap-clients policycoreutils-python nano"
 DEB_PACKAGE_NAME="python2.7 python-dev python-pip libssl-dev"
+
  if cat /etc/*release | grep ^NAME | grep CentOS; then
     echo "==============================================="
     echo "Installing packages $YUM_PACKAGE_NAME on CentOS"
