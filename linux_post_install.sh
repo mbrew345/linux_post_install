@@ -11,8 +11,6 @@ DEB_PACKAGE_NAME="python2.7 python-dev python-pip libssl-dev"
     yum install -y $YUM_PACKAGE_NAME
     systemctl enable xe-linux-distribution
     systemctl start xe-linux-distribution
-
-
  elif cat /etc/*release | grep ^NAME | grep Ubuntu; then
     echo "==============================================="
     echo "Installing packages $DEB_PACKAGE_NAME on Ubuntu"
